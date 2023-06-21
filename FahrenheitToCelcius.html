@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Suhu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p>Masukkan suhu derajat Fahrenheit (°F) ke kotak bawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Celsius (°C)</p>
+
+  <p>Fahrenheit (°F): </p>
+  <textarea id="inputFahrenheit" oninput="validateInput(this)" required></textarea><br><br>
+
+  <button class="btn" onclick="convertToCelsius()">Konversi</button>
+  <button class="btn" onclick="reset()">Reset</button>
+  <button class="btn" onclick="reverse()">Reverse</button>
+
+  <p>Celsius (°C): </p>
+  <textarea id="outputCelsius" readonly></textarea><br><br>
+
+  <p>Cara Kalkulasi:</p>
+  <textarea id="calculation" readonly></textarea><br><br>
+
+  <a href="CelsiusToFahrenheit.html">Celsius ke Fahrenheit</a>
+
+  <script src="FahrenheitToCelcius.js"></script>
+</body>
+</html>
