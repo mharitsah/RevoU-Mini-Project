@@ -1,2 +1,2 @@
-# RevoU-Mini-Project
+# haritsahproject.github.io
 Temperature Calculator for Mini Project RevoU Course
