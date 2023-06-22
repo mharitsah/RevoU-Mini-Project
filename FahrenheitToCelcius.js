@@ -4,17 +4,18 @@ function validateInput(input) {
 
 function convertToCelsius() {
     var fahrenheit = parseFloat(document.getElementById("inputFahrenheit").value);
+    // memberikan alert jika input fahrenheit kosong
     if (isNaN(fahrenheit)) {
         alert("Harap isi nilai input dengan angka");
         return;
     }
-    var celsius = (fahrenheit - 32) * 5 / 9;
-    document.getElementById("outputCelsius").value = celsius;
+    var celsius = (fahrenheit - 32) * 5 / 9; // rumus koversi fahrenheit ke celsius
+    document.getElementById("outputCelsius").value = celsius;// mengambil nilai dari id outputCelsius
 
-    var calculation = "Celsius = (Fahrenheit (°F) - 32) * 5/9\n";
+    var calculation = "Celsius = (Fahrenheit (°F) - 32) * 5/9\n"; 
     calculation += "Celsius = (" + fahrenheit + " - 32) * 5/9\n";
     calculation += "Celsius = " + celsius + "°C";
-    document.getElementById("calculation").value = calculation;
+    document.getElementById("calculation").value = calculation; //hasil akhir koversi dari fahrenheit ke celsius
 }
 
 function reset() {
@@ -24,5 +25,5 @@ function reset() {
 }
 
 function reverse() {
-    window.location.href = "CelsiusToFahrenheit.html";
+    window.location.href = "index.html";
 }
